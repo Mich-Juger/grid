@@ -1,15 +1,15 @@
 body {
+    font-family: 'Cabin', sans-serif;
     background-image: url(../img/Presentación\ Diapositiva\ Marca\ Creativa\ Doodle\ Acuarela\ Colores\ Pasteles.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-
 /*Llamado grid */
 
 header {
     grid-area: header;
-    background-color: rgba(204, 155, 155, 0.425);
+    background-color: rgba(136, 79, 79, 0.425);
     position: fixed;
     width: 100%;
     color: white;
@@ -18,8 +18,9 @@ header {
 
 aside {
     grid-area: aside;
-    background-color: rgba(231, 186, 173, 0.753);
+    background-color: rgba(245, 227, 239, 0.358);
     display: grid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 section {
@@ -48,21 +49,30 @@ main {
 /* Fin Llamado grid */
 
 /*Inicio NAV*/
+
 nav {
-    padding: 22px;
+    height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav li a {
-  color: white;
-  text-decoration: none;
-  padding: .5em 1em;
+    color: white;
+    text-decoration: none;
+    padding: .5em 1em;
+    border-bottom: solid 1px #f9f9f9;
+    border-top: solid 1px #f9f9f9;
 }
 
 nav li a:hover {
-  background: tomato;
-  color: white;
+    background: rgb(220, 129, 112);
+    color: white;
+}
+
+nav > img {
+    height: 50px;
+    padding-top: 10px;
 }
 
 @media screen and (min-width: 480px) {
@@ -77,6 +87,65 @@ nav i {
     cursor: pointer;
 }
 /*Termino NAV*/
+
+
+
+/*Inicio narra lateral aside*/
+
+#menu  {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 60px;
+}
+
+#menu div {
+    display: flex;
+    flex-direction: row;
+}
+    
+#menu div:hover {
+    background-color: rgba(161, 100, 100, 0.425);
+    color: white;
+}
+
+/*checkbox talla COPIADO/
+
+/* OFF */
+[type="checkbox"]:not(:checked) + label:after {
+    background: url('check_off.png') left center no-repeat;
+}
+  
+  /* ON */
+  [type="checkbox"]:checked + label {
+
+}
+  [type="checkbox"]:checked + label:after {
+    background: url('check_on.png') left center no-repeat;
+}
+
+#talla > h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+}
+
+#talla {
+    text-align: center;
+}
+
+/*checkbox talla COPIADO/ 
+/*Fin narra lateral aside*/
+
+
+
 
 /*INICIO CONTENIDO*/
 
